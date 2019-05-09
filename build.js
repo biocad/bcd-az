@@ -1,1 +1,1 @@
-console.log("BIULD OK", process);
+console.warn("BIULD OK", process);
