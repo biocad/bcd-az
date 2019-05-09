@@ -3,8 +3,9 @@ const http = require('http');
 const server = http.createServer(
     
     (request, response) => {
+        const name = request.headers['x-ms-client-principal-name'];
         response.writeHead(200, {"Content-Type": "text/plain"});
-        response.end("Request headers\n" + JSON.stringify(request.headers,null,2) );
+        response.end("hello " +  name);
     }
 );
 
