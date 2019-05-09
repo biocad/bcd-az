@@ -1,10 +1,13 @@
 {
     "name": "bcd-az",
     "description": "test application",
+    "private": true,
     "version": "0.0.1",
     "dependencies": {
+        "bcd-front-sso": "git+https://160e8abbd0b52a15f6cc4cbed21ba07da6316dbc:x-oauth-basic@github.com/biocad/bcd-front-sso.git",
         "bcd-front": "git+https://160e8abbd0b52a15f6cc4cbed21ba07da6316dbc:x-oauth-basic@github.com/biocad/bcd-front.git",
-        "bnc": "github:maetchkin/bnc",
+        "dvb-doc": "git+https://160e8abbd0b52a15f6cc4cbed21ba07da6316dbc:x-oauth-basic@github.com/biocad/dvb-doc.git",
+        "bnc": "github:maetchkin/bnc"
     },
     "scripts": {
         "start": "node index.js",
