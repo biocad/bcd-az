@@ -6,7 +6,7 @@ const server = http.createServer(
         const name = request.headers['x-ms-client-principal-name'];
         const res  = "hello " +  name + "\n\n" + JSON.stringify(request.headers,null,2);
         response.writeHead(200, {"Content-Type": "text/plain"});
-        response.end();
+        response.end(res);
     }
 );
 
